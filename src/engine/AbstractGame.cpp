@@ -51,7 +51,7 @@ int AbstractGame::runMainLoop() {
 			update();
 			updatePhysics();
 
-			gameTime += 0.016;	// 60 times a sec
+			gameTime += 0.016;
 		}
 
 		gfx->clearScreen();
@@ -59,7 +59,7 @@ int AbstractGame::runMainLoop() {
 		renderUI();
 		gfx->showScreen();
 
-		gfx->adjustFPSDelay(16);	// atm hardcoded to ~60 FPS
+		gfx->adjustFPSDelay(16);
 	}
 
 #ifdef __DEBUG
